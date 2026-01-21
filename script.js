@@ -5,7 +5,7 @@ let bookLikes = books[0].likes;
 let bookLiked = books[0].liked;
 let bookPrice = books[0].price;
 let bookCommentUsername = books[0].comments[0].name;
-let bookComment = books[0].commemts[0].commemt;
+let bookComment = books[0].comments[0].comment;
 
 // name: "Die Geheimnisse des Ozeans",
 // author: "Clara Meer",
@@ -13,14 +13,16 @@ let bookComment = books[0].commemts[0].commemt;
 // liked: true,
 // price: 19.99,
 
-const contentRef = document.getElementById("content");
+function renderNotes() {
+    const contentRef = document.getElementById("content");
 
-// to display the currency symbol
+    // to display the currency symbol
 
-contentRef.innerHTML = `<p>${bookName}</p>
-<p>Author : ${bookAuthor}</p>
-<p>${bookLikes}</p>
-<p>${bookLiked}</p>
-<p>Price ${bookPrice} &#8364</p>
-<p>[${bookCommentUsername}]</p>
-<p>${bookComment}</p>`;
+    contentRef.innerHTML = `<p>${bookName}</p>
+    <p>Author : ${bookAuthor}</p>
+    <p>${bookLikes}</p>
+    <p>${bookLiked}</p>
+    <p>Price ${bookPrice} &#8364</p>
+    <p>[${bookCommentUsername}]</p>
+    <p>${bookComment}</p>`;
+}
