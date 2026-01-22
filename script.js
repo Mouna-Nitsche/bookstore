@@ -21,7 +21,11 @@ function renderNotes() {
     contentRef.innerHTML = `<p>${bookName}</p>
     <p>Author : ${bookAuthor}</p>
     <p>${bookLikes}</p>
-    <p>${bookLiked}</p>
+                    <img
+                    class="icons"
+                        src="./img/heart_symbol.png"
+                        alt="This is an heart Icon, to click if you liked this Book"
+                    />    <p>${bookLiked}</p>
     <p>Price ${bookPrice} &#8364</p>
     <p>[${bookCommentUsername}]</p>
     <p>${bookComment}</p>`;
