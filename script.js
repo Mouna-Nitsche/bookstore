@@ -16,24 +16,20 @@ function iterateBooks() {
 
     for (let Booksindex = 0; Booksindex < books.length; Booksindex++) {
         contentRef.innerHTML += generateBook(Booksindex);
+        iterateComments(Booksindex);
+    }
+}
+
+function iterateComments(Booksindex) {
+    const commentsRef = document.getElementById("comments");
+
+    for (
+        let Commentsindex = 0;
+        Commentsindex < books[Booksindex].comments.length;
+        Commentsindex++
+    ) {
+        commentsRef.innerHTML += addComment(Booksindex, Commentsindex);
     }
 }
 
 console.log(books);
-
-function generateBook(Booksindex) {
-    // to display the currency symbol
-
-    return `<p>${books[Booksindex].name}</p>
-    <p>Author : ${books[0].author}</p>
-    <p>${books[0].likes}</p>
-        <img
-        class="icons"
-            src="./img/heart_symbol.png"
-            alt="This is an heart Icon, to click if you liked this Book"
-        />
-    <p>${books[0].liked}</p>
-    <p>Price ${books[0].price} &#8364</p>
-    <p>[${books[0].comments[0].name}]</p>
-    <p>${books[0].comments[0].comment}</p>`;
-}
