@@ -1,5 +1,5 @@
 html {
-    background-color: black;
+    background-color: grey;
     color: white;
 }
 
@@ -13,6 +13,10 @@ html {
 .bookImages-styling {
     height: 100px;
     width: 100px;
+}
+
+svg.toggle path {
+    fill: none;
 }
 
 .icons {

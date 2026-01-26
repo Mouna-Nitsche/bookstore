@@ -7,17 +7,17 @@ function generateBook(Booksindex) {
                 <p>${books[Booksindex].name}</p>
                 <p>Author : ${books[Booksindex].author}</p>
                 <p>${books[Booksindex].likes}</p>
-                <img class="icons" src="./img/heart_symbol.png"
-                    alt="This is an heart Icon, to click if you liked this Book"/>
+                <svg id="heart_svg-${Booksindex}" width="20px" height="20px" onclick="toggleLiked(${Booksindex})" viewBox="0 0 32 32" enable-background="new 0 0 32 32" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc/><path d="M28.343,17.48L16,29  L3.657,17.48C1.962,15.898,1,13.684,1,11.365v0C1,6.745,4.745,3,9.365,3h0.17c2.219,0,4.346,0.881,5.915,2.45L16,6l0.55-0.55  C18.119,3.881,20.246,3,22.465,3h0.17C27.255,3,31,6.745,31,11.365v0C31,13.684,30.038,15.898,28.343,17.48z" fill="red" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/></svg>
                 <p>${books[Booksindex].liked}</p>
                 <p>Price ${books[Booksindex].price} &#8364</p>
                 <div id="comments-${Booksindex}">
-                    <input id="input-comment" type="text" placeholder="Schreib dein Kommentar ..."/>
+                    <input id="input_comment" type="text" placeholder="Schreib dein Kommentar ..."/>
                     <button id="submit-comment-btn" onclick="addComment()">
                         Send comment
                         <img class="icons" src="./img/paper_airplane_1.png"
                             alt="This is a send Button with an paper aurplane Symbol."/>
                     </button>
+                    <p id="writtenComments"></p>
                 </div>
             </div>
     `;
