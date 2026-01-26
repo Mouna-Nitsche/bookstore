@@ -21,7 +21,7 @@ function iterateBooks() {
 }
 
 function iterateComments(Booksindex) {
-    const commentsRef = document.getElementById("comments");
+    const commentsRef = document.getElementById(`comments-${Booksindex}`);
 
     for (
         let Commentsindex = 0;

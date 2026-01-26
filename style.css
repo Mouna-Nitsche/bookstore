@@ -1,11 +1,16 @@
+html {
+    background-color: black;
+    color: white;
+}
+
 .content-styling {
     height: 550px;
     width: 220px;
-    border: 2px solid black;
+    border: 2px solid rgb(251, 251, 251);
     border-radius: 8px;
 }
 
-.bockImages-styling img {
+.bookImages-styling {
     height: 100px;
     width: 100px;
 }
