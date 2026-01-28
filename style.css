@@ -1,14 +1,28 @@
 html {
-    background-color: grey;
-    color: white;
+    /* background-color: grey; */
+    /* color: white; */
+}
+
+body {
+    /* color: blue; */
 }
 
 .content-styling {
     height: 550px;
-    width: 220px;
-    border: 2px solid rgb(251, 251, 251);
+    width: 250px;
+    border: 2px solid rgb(10, 10, 10);
     border-radius: 8px;
+    margin: 24px;
+    display: flex;
 }
+
+.content-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 .bookImages-styling {
     height: 100px;
@@ -19,7 +33,26 @@ svg.toggle path {
     fill: none;
 }
 
+svg {
+    height: 80px;
+    width: 80px;
+}
+
 .icons {
     height: 16px;
     width: 16px;
+}
+
+/* .more {
+    display: none;
+} */
+
+.scrollbar {
+    border: black solid 2px;
+    border-radius: 8px;
+    height: 100px;
+    overflow: auto;
+
+    margin-top: 16px;
+    margin-bottom: 16px;
 }

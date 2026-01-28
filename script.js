@@ -39,13 +39,14 @@ function toggleLiked(Booksindex) {
 
 // let userComments = [];
 //push statt add
-function saveUserComments() {
-    let inputCommentRef = document.getElementById(input_comment);
-    inputCommentRef += push(books[Booksindex].comments[Commentsindex].comment);
 
-    let writtenCommentsRef = document.getElementById(writtenComments);
-    writtenCommentsRef.innerHTML += inputCommentRef;
-}
-saveUserComments();
+// function saveUserComments() {
+//     let inputCommentRef = document.getElementById(input_comment);
+//     inputCommentRef += push(books[Booksindex].comments[Commentsindex].comment);
+
+//     let writtenCommentsRef = document.getElementById(writtenComments);
+//     writtenCommentsRef.innerHTML += inputCommentRef;
+// }
+// saveUserComments();
 
 console.log(books);
