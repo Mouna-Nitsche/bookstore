@@ -35,18 +35,65 @@ function iterateComments(Booksindex) {
 function toggleLiked(Booksindex) {
     let heartRef = document.getElementById(`heart_svg-${Booksindex}`);
     heartRef.classList.toggle("toggle");
+    // }
+
+    let clicksRef = document.getElementById(`likes_counter-${Booksindex}`);
+    let increaseCounter = Number(clicksRef.innerHTML) + 1;
+
+    // function counter(Booksindex) {
+    if (heartRef.classList.contains("toggle")) {
+        clicksRef.innerHTML = increaseCounter;
+    } else {
+        clicksRef = document.getElementById(`likes_counter-${Booksindex}`);
+        increaseCounter = Number(clicksRef.innerHTML) - 1;
+
+        clicksRef.innerHTML = increaseCounter;
+    }
 }
+
+// Counter erstellen ++
+// Zahl erstellen und hochzählen mit onclick
+
+// if heart_svg-0 class="lucide lucide-heart-icon lucide-heart toggle”
+// dann zähle einen Hoch.
 
 // let userComments = [];
 //push statt add
 
-// function saveUserComments() {
-//     let inputCommentRef = document.getElementById(input_comment);
-//     inputCommentRef += push(books[Booksindex].comments[Commentsindex].comment);
+function saveUserComments(Booksindex) {
+    const inputCommentRef = document.getElementById(
+        `inputComment-${Booksindex}`,
+    );
 
-//     let writtenCommentsRef = document.getElementById(writtenComments);
-//     writtenCommentsRef.innerHTML += inputCommentRef;
+    const inputComment = inputCommentRef.value;
+
+    const CommentsArrayRef = books[Booksindex].comments;
+
+    CommentsArrayRef.push({
+        name: "Gast",
+        comment: inputComment,
+    });
+
+    iterateComments(Booksindex);
+    inputCommentRef.value = "";
+
+    // let writtenCommentsRef = document.getElementById(writtenComments);
+    // writtenCommentsRef.innerHTML += inputCommentRef;
+}
+
+// console.log(books[Booksindex].comments);
+
+//Add notes
+// function addNote() {
+//     //Save input / Add to notes
+//     //Display input
+//     const noteInputRef = document.getElementById("note_input");
+//     const noteInput = noteInputRef.value;
+
+//     notes.push(noteInput);
+//     renderNotes();
+
+//     noteInputRef.value = "";
 // }
-// saveUserComments();
 
 console.log(books);

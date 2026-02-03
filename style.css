@@ -25,22 +25,23 @@ body {
 
 
 .bookImages-styling {
-    height: 100px;
-    width: 100px;
-}
-
-svg.toggle path {
-    fill: none;
-}
-
-svg {
     height: 80px;
     width: 80px;
 }
 
+svg.toggle path {
+    fill: red;
+}
+
+.svg_location {
+    width: 24px;
+    height: 24px;
+}
+
+
 .icons {
-    height: 16px;
-    width: 16px;
+    height: 12px;
+    width: 12px;
 }
 
 /* .more {
