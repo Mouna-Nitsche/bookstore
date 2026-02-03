@@ -6,6 +6,12 @@ body {}
     cursor: pointer;
 }
 
+.main-content-books-styling {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1250px;
+}
+
 .content-styling {
     height: 580px;
     width: 250px;
