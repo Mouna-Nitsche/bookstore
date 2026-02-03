@@ -27,10 +27,10 @@ function generateBook(Booksindex) {
                             <div id="comments-${Booksindex}" class="comments-scrollbar"></div>
                             <div class="comments-section">
                                 <input id="inputComment-${Booksindex}" type="text" placeholder="Schreib dein Kommentar ..."/>
-                                <button id="submit-comment-btn" class="pointer" onclick="saveUserComments(${Booksindex})">
-                                <img class="icons" src="./img/paper_airplane_1.png"
+                                <a id="submit-comment-btn" class="pointer a-style" onclick="saveUserComments(${Booksindex})">
+                                    <img class="icons" src="./img/paper_airplane_1.png"
                                     alt="This is a send Button with an paper airplane Symbol."/>
-                                </button>
+                                </a>
                             </div>
                             <p id="writtenComments"></p>
                         </div>
