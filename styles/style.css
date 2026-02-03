@@ -1,0 +1,100 @@
+html {}
+
+body {}
+
+.pointer {
+    cursor: pointer;
+}
+
+.content-styling {
+    height: 580px;
+    width: 250px;
+    border: 2px solid rgb(10, 10, 10);
+    border-radius: 8px;
+    margin: 24px;
+    display: flex;
+    padding: 16px;
+}
+
+.content-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Figtree";
+
+}
+
+.padding-margin {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.bookName-bookImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 8px;
+}
+
+.divider-line {
+    border-bottom: 3px solid #c7e8bc;
+
+}
+
+.bookImages-styling {
+    height: 100px;
+    width: 100px;
+}
+
+.price-position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.likeNumber-likeButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.book-details {
+    font-size: 12px;
+}
+
+svg.toggle path {
+    fill: red;
+}
+
+.svg_location {
+    width: 24px;
+    height: 24px;
+}
+
+
+.icons {
+    height: 12px;
+    width: 12px;
+}
+
+/* .noComments {
+    display: none;
+} */
+
+.comments-scrollbar {
+    border: black solid 2px;
+    border-radius: 8px;
+    height: 140px;
+    overflow: auto;
+
+    margin-bottom: 16px;
+    font-size: 12px;
+}
