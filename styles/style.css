@@ -30,6 +30,12 @@ body {}
     font-family: "Figtree";
 }
 
+
+.center-content {
+    display: flex;
+    justify-content: center;
+}
+
 .padding-margin {
     margin-top: 8px;
     margin-bottom: 8px;
