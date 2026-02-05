@@ -41,10 +41,8 @@ function generateBook(Booksindex) {
 
 function addComment(Booksindex, Commentsindex) {
     //if there is 1 or more coment
-    if (books[Booksindex].comments.length > 0) {
-        return `
+    return `
                 <p>[${books[Booksindex].comments[Commentsindex].name}]</p>
                 <p>${books[Booksindex].comments[Commentsindex].comment}</p>
             `;
-    }
 }
