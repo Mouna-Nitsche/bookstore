@@ -11,13 +11,16 @@ function iterateBooks() {
 }
 
 function iterateComments(Booksindex) {
+    //This Div displays all comments
     const commentsRef = document.getElementById(`comments-${Booksindex}`);
+    commentsRef.innerHTML = "";
 
     for (
         let Commentsindex = 0;
         Commentsindex < books[Booksindex].comments.length;
         Commentsindex++
     ) {
+        //if the is at least one comment add it to the comment section
         if (books[Booksindex].comments.length > 0) {
             commentsRef.innerHTML += addComment(Booksindex, Commentsindex);
         }
@@ -53,7 +56,8 @@ function saveUserComments(Booksindex) {
     );
 
     const inputComment = inputCommentRef.value;
-    const CommentsArrayRef = books[Booksindex].comments;
+
+    let CommentsArrayRef = books[Booksindex].comments;
 
     CommentsArrayRef.push({
         name: "Gast",
