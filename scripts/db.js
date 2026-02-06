@@ -175,7 +175,7 @@ let books = [
         genre: "Romantik",
         comments: [
             {
-                name: "Bibliophile23",
+                name: "Bib23",
                 comment:
                     "Die Fantasiewelt war so lebendig, ich konnte das Buch kaum aus der Hand legen.",
             },
